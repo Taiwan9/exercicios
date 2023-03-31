@@ -1,17 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+import Saudacao from './componentes/saudacao'
+import Pai from './componentes/pai'
+import Filho from './componentes/filho'
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(
+    /*<div>
+       <Multi.BoaTarde nome="Ana" />
+        <Multi.BoaNoite nome ="Bia" />
+    </div>*/
+
+    /*<div>
+        <Saudacao tipo="Bom dia" nome="João"></Saudacao>
+    </div>*/
+    <div>
+        <Pai nome="Paulo" sobrenome="Silva">
+
+            {/* COmo passo os componentes filhos aqui?*/}
+            <Filho nome="Pedro" ></Filho>
+            <Filho nome="Camila" ></Filho>
+            <Filho nome="joao" ></Filho>
+
+        </Pai>
+
+    </div>,
+     document.getElementById('root'))
